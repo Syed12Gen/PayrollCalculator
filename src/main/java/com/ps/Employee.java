@@ -1,7 +1,7 @@
 package com.ps;
 
 public class Employee {
-    private int employeeId;
+    private long employeeId;
     private String name;
     private int hoursWorked;
     private int payRate;
@@ -15,7 +15,7 @@ public class Employee {
     }
 
     //Getters and Setters
-    public int getEmployeeId() {
+    public long getEmployeeId() {
         return this.employeeId;
     }
 
