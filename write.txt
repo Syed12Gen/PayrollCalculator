@@ -1,0 +1,4 @@
+Employee ID: 10, Name: Dana Wyatt, Hours Worked: 52.50, Pay Rate: 12.50, Gross Pay: 656.25
+Employee ID: 20, Name: Ezra Aiden, Hours Worked: 17.00, Pay Rate: 16.75, Gross Pay: 284.75
+Employee ID: 30, Name: Brittany Thibbs, Hours Worked: 40.00, Pay Rate: 16.50, Gross Pay: 660.00
+Employee ID: 40, Name: Zephaniah Hughes, Hours Worked: 2.00, Pay Rate: 10.00, Gross Pay: 20.00

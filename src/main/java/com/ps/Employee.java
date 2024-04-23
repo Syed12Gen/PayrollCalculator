@@ -3,24 +3,22 @@ package com.ps;
 public class Employee {
     private long employeeId;
     private String name;
-    private int hoursWorked;
-    private int payRate;
+    private float hoursWorked;
+    private float payRate;
 
-    //constructors
-    public Employee(int employeeId, String name, int hoursWorked, int payRate) {
+    public Employee(long employeeId, String name, float hoursWorked, float payRate) {
         this.employeeId = employeeId;
         this.name = name;
         this.hoursWorked = hoursWorked;
         this.payRate = payRate;
     }
 
-    //Getters and Setters
-    public long getEmployeeId() {
-        return this.employeeId;
+    public float calcGrossPay(){
+        return this.hoursWorked * this.payRate;
     }
 
-    public void setEmployeeId(int employeeId) {
-        this.employeeId = employeeId;
+    public long getEmployeeId() {
+        return this.employeeId;
     }
 
     public String getName() {
@@ -31,36 +29,29 @@ public class Employee {
         this.name = name;
     }
 
-    public int getHoursWorked() {
+    public float getHoursWorked() {
         return this.hoursWorked;
     }
 
-    public void setHoursWorked(int hoursWorked) {
+    public void setHoursWorked(float hoursWorked) {
         this.hoursWorked = hoursWorked;
     }
 
-    public int getPayRate() {
+    public float getPayRate() {
         return this.payRate;
     }
 
-    public void setPayRate(int payRate) {
+    public void setPayRate(float payRate) {
         this.payRate = payRate;
     }
-
-    public float calculateGrossPay(){
-        return this.hoursWorked * this.payRate;
-
-    }
-
 
 
     @Override
     public String toString() {
         return "Employee{" +
-                "employeeId=" + employeeId +
-                ", name='" + name + '\'' +
-                ", hoursWorked=" + hoursWorked +
-                ", payRate=" + payRate +
+                "name='" + this.name + '\'' +
+                ", hoursWorked=" + this.hoursWorked +
+                ", payRate=" + this.payRate +
                 '}';
     }
 }
